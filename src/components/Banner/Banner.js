@@ -1,12 +1,8 @@
-import React, {useEffect} from 'react';
-// import Aos from 'aos';
-// import 'aos/dist/aos.css';
+import React from 'react';
+
 import styles from './Banner.module.css';
 
 const Banner = () => {
-
-        
-
     return (
         <div className={styles.container}>
             <div className={styles.textContainer}>
