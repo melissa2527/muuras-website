@@ -1,0 +1,25 @@
+.container {
+    padding: 1.5rem;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin-bottom: */
+  }
+  
+  .main {
+      margin-top: 2rem;
+      text-align: center;
+      /* font-size: */
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  
