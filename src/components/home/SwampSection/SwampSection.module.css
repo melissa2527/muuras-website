@@ -1,0 +1,39 @@
+.container {
+    min-height: 60vh;
+    padding: 2rem;
+    background-color: --yellow; 
+}
+
+.title {
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: --text-shadow;
+} 
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    flex-direction: row; 
+}
+
+.text {
+    width: 50%;
+    border: 2px solid blue;
+}
+       
+.image {
+    width: 49%;
+}
+
+.image img {
+    max-width: 400px;
+}
+        
+#hero-btn {
+    position: absolute;
+    margin-top: 40rem;
+    text-align: center;
+} 
+

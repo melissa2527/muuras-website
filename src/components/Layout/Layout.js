@@ -1,12 +1,15 @@
 import React from 'react'
 import Head from 'next/head';
 import styles from './Layout.module.css';
+import Footer from '../footer/Footer';
+import Meta from '../Meta';
 
-const Layout = ({children, title="Muuras"}) => {
+const Layout = ({children}) => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{'overflowX': 'hidden'}}>
             <Head>
-                <title>{title}</title>
+                {/* <Meta /> */}
+                {/* <title>{title}</title> */}
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -16,9 +19,7 @@ const Layout = ({children, title="Muuras"}) => {
                 {children}
             </main>
 
-            <footer className={styles.footer}>
-                Muuras - 2021
-            </footer>
+            <Footer className={styles.footer} title='Muuras 2021' />
         </div>
     )
 }

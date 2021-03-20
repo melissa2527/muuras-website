@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import navStyles from './Navbar.module.css';
+import navStyles from './Navbar.module.scss';
 import Link from 'next/link';
 
-const NavBar = () => {
+const Navbar = () => {
     const [clicked, setClicked] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -21,7 +21,7 @@ const NavBar = () => {
         showButton();
     }, []);
 
-    window.addEventListener('resize', showButton);
+    // window.addEventListener('resize', showButton);
 
     return (
         <>
@@ -30,10 +30,10 @@ const NavBar = () => {
                     <Link href='/' className={navStyles.navLogo} onClick={closeMenuMobile}>
                         <img src='img/muuras.png' alt='Muuras' height={50}/>
                     </Link>
-                    <div className={navStyles.menu} onClick={handleClick}>
+                    <div className={navStyles.navMenu} onClick={handleClick}>
                         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
-                    <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+                    <ul className={clicked ? 'navMenu active' : 'navMenu'}>
                         <li className={navStyles.navItem}>
                             <Link href='/' className={navStyles.link} onClick={closeMenuMobile}>
                                 Home

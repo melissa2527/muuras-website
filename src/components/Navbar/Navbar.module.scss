@@ -1,5 +1,7 @@
-.navbar {
-    background: --dark-green;
+@import '../../../styles/_variables.scss';
+
+.nav {
+    background: $dark-green;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -34,7 +36,7 @@
     font-size: 1.8rem;
 }
   
-.nav-menu {
+.navMenu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -49,7 +51,7 @@
     height: 80px;
 }
 
-.link {
+/* .link {
     color: --yellow;
     display: flex;
     align-items: center;
@@ -68,13 +70,13 @@
     color: --yellow;
 }
   
-.nav-link {
+.link {
     display: none;
 }
   
 .menu-icon {
     display: none;
-}  
+}   */
   
   
 @media screen and (max-width: 960px) {
@@ -82,7 +84,7 @@
       position: relative;
     }
   
-    .nav-menu {
+    .navMenu {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -94,7 +96,7 @@
       transition: all 0.5s ease;
     }
   
-    .nav-menu.active {
+    .navMenu.active {
       background: --dark-green;
       left: 0;
       opacity: 1;
@@ -102,27 +104,27 @@
       z-index: 1;
     }
   
-    .nav-link {
+    .link {
       text-align: center;
       padding: 2rem;
       width: 100%;
       display: table;
     }
   
-    .nav-link:hover {
+    .link:hover {
       background-color: #fff;
       color: #242424;
       border-radius: 0;
     }
   
-    .navbar-logo {
+    .navLogo {
       position: absolute;
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
     }
   
-    .menu-icon {
+    .menu {
       display: block;
       position: absolute;
       top: 0;

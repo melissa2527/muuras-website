@@ -4,7 +4,7 @@ import styles from './SwampSection.module.css';
 const SwampSection = () => {
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}></h2>
+            <h2 className={styles.title}>We Put Swamps on Walls</h2>
             <div className={styles.section}>
                 <div className={styles.text}>
                     <p>Muuras develops green vertical wetland filters that can provide a range of environmental benefits.</p>
@@ -12,7 +12,7 @@ const SwampSection = () => {
                     <div className={styles.btnContainer}>
                         <button className={styles.btn}>Learn More</button>
                     </div>
-                    
+
                     <div className={styles.image}>
                         <img src='./img/muuras-building.jpg' alt='Muuras building'/>
                     </div>
